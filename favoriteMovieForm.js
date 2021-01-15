@@ -11,6 +11,10 @@ export const addFavoriteMovieEventListener = () => {
     }
 
     const favoriteMovieInput = document.querySelector('#favorite-movie');
+    if (!favoriteMovieInput.value?.trim()) {
+      return;
+    }
+
     sessionStorage.setItem('favoriteMovie', favoriteMovieInput.value);
 
     const eventHub = document.querySelector('.container');

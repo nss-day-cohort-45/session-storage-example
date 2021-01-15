@@ -1,0 +1,11 @@
+body {
+    font-size: 2em;
+}
+
+input, button {
+    font-size: 1.3rem;
+}
+
+.favorite-movie-display-container {
+    margin: 32px;
+}
