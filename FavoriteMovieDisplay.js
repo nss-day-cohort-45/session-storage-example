@@ -15,10 +15,10 @@ export const addClearEventListener = () => {
   const container = document.querySelector('.favorite-movie-display-container');
   container.addEventListener('click', (evt) => {
     if (evt.target.id !== 'clear-favorite-movie-btn') {
-      return
+      return;
     }
 
-    sessionStorage.removeItem('favoriteMovie')
+    sessionStorage.removeItem('favoriteMovie');
 
     const eventHub = document.querySelector('.container');
     eventHub.dispatchEvent(new CustomEvent('favoriteMovieChanged'));
